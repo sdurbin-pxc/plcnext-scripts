@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Author: Steven Durbin
 # This bash script is for controlling the signal lamps on the AXC 1152/2152/3152 hardware.
 # The script needs to be ran with root privileges.
 
