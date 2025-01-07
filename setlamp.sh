@@ -1,5 +1,21 @@
 #!/bin/bash
 
+# This bash script is for controlling the signal lamps on the AXC 1152/2152/3152 hardware.
+# The script needs to be ran with root privileges.
+
+# Arguments:
+# ./setlamp {ledName} {mode} {color} {frequency}
+
+# ledName: bf-c, bf-d, sf, boot, ext, run, fail, dbg, d, e
+# mode: on, off, blink
+# color: green, yellow, red
+# frequency: milliseconds between light toggle
+
+# Examples:
+# ./setlamp run on red
+# ./setlamp e off
+# ./setlamp bf-c blink yellow 1000
+
 DRIVER_PATH=/sys/class/signal_lamps/signal_lamps0/
 
 led=""
